@@ -47,3 +47,20 @@ maturin develop
 ```
 
 This will compile the library and compile the binaries into the `./.env/Lib/site-packages` directory.
+
+### Consuming the library
+
+After you have compiled the library the next step is to consume it with the Python instead embedded within EMME.  You can do this
+either by developing EMME tools or using the built-in Jupyter Notebook.
+
+```py
+# Temporarly add the library directory to your EMME's python path
+import sys
+sys.path.append(r"C:\Your_Library_Path\tmg_emme_lib\.env\Lib")
+
+# You can now import in the library
+import tmg_emme_lib
+
+# And execute some high performance code
+tmg_emme_lib.add(2, 3) # 5
+```
