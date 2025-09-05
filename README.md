@@ -1,7 +1,7 @@
 # TMG EMME Lib
 
 This library gives us an example of how to create a Rust library that is
-able to be called from 
+able to be called from the Python instead for EMME.
 
 ## Building the project
 
